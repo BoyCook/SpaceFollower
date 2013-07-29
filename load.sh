@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tsapp push spacefollower index.html
+tsapp push spacefollower SpaceFollower.html
 tsapp push spacefollower Elusive-Icons.eot
 tsapp push spacefollower Elusive-Icons.svg
 tsapp push spacefollower Elusive-Icons.ttf
