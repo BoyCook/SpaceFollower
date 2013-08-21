@@ -17,7 +17,7 @@ function SPA(host) {
 
 SPA.prototype.followSpaces = function(spaces) {
 	if (confirm('Do you want to follow [' + spaces.length + '] spaces? - ' + spaces)) {
-		for (var i=0,len=spaces.length;i<len;i++) {
+		for (var i=0,len=spaces.length;i < len; i++) {
 			this.doFollow(spaces[i]);
 			//TODO call getFollowTiddlers in callback
 		}		
@@ -50,7 +50,7 @@ SPA.prototype.getFollowTiddlers = function() {
 	var context = this;	
 	var success = function(data) {
 		var following = '';
-		for (var i=0,len=data.length;i<len;i++) {
+		for (var i=0,len=data.length; i < len; i++) {
 			following += context.generateHtml(data[i].title);
 		}
 		context.renderTiddlers(following);
